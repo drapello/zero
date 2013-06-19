@@ -14,7 +14,7 @@ set :normalize_asset_timestamps, false
 #role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
 
 server "23.23.230.249", :app, :web, :db, :primary => true
-set :deploy_to, "/var/wwww/"
+set :deploy_to, "/home/ubuntu/projetos/odiaqueobrasilparou"
 
 set :deploy_via, :copy
 
