@@ -107,8 +107,8 @@
       background-color: transparent;
       position: static;
       max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
+      /*padding: 0 20px;*/
+      margin-top: 50px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -268,7 +268,13 @@
   </head>
 
   <body>
-
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Carousel
     ================================================== -->
@@ -279,8 +285,9 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Vamos para o Brasil</h1>
-              <p class="lead">Quinta feira em todo o país vá para as ruas</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+              <p class="lead">Quinta-feira 20/Jun 
+              	<br>todo brasileiro nas ruas</p>
+              <div class="fb-like" data-href="http://odiaqueobrasilparou.com/" data-send="false" data-width="450" data-show-faces="true"></div>
             </div>
           </div>
         </div>
